@@ -1,0 +1,88 @@
+/* Style Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Marvel", sans-serif;
+}
+
+body {
+  background-color: #0d0d0d; /* Fond noir */
+  color: #ffffff; /* Texte en blanc pour contraste */
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif; /* Police par défaut */
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #0d0d0d; /* Fond noir */
+  color: white; /* Texte blanc */
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur principal */
+.container {
+  display: flex;
+  flex-direction: column; /* Empile les éléments verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+}
+
+/* Logo */
+.logo img {
+  display: block; /* Affichage en block */
+  margin: 0 auto;
+  height: 80px; /* Ajustez la taille si nécessaire */
+}
+
+/* Navigation */
+.nav-links {
+  margin: 20px 0; /* Espacement au-dessus et en dessous des liens */
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centre les liens */
+  gap: 30px; /* Espacement entre les liens */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  font-family: "Marvel", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e62429; /* Rouge Marvel */
+}
+
+/* Style pour le lien actif */
+.nav-links a.active {
+  color: #e62429; /* Rouge Marvel */
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Barre de recherche */
+.search-bar {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px; /* Limite la largeur de la barre */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px; /* Bords arrondis */
+  font-size: 16px;
+}

@@ -1,0 +1,128 @@
+.character-grid {
+  display: grid; /* Active la grille */
+  grid-template-columns: repeat(5, 1fr); /* 5 colonnes de tailles égales */
+  gap: 20px; /* Espacement entre les personnages */
+  margin: 20px auto; /* Marges automatiques pour centrer */
+  padding: 0 20px; /* Espacement horizontal */
+}
+
+.character-grid > * {
+  font-family: "Marvel", sans-serif;
+  background-color: #333; /* Couleur de fond des cartes (modifiable) */
+  color: #fff; /* Texte blanc */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 10px; /* Espacement interne */
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Légère ombre */
+}
+
+@media (max-width: 768px) {
+  .character-grid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 colonnes sur les petits écrans */
+  }
+}
+
+/* Conteneur de pagination */
+.pagination-container {
+  display: flex; /* Utiliser Flexbox pour aligner les éléments */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Aligne les éléments verticalement */
+  gap: 15px; /* Espacement entre les boutons et le texte */
+  margin: 20px 0; /* Ajouter de l'espace autour de la pagination */
+  padding: 10px 0; /* Espacement vertical pour un meilleur look */
+  background-color: #0d0d0d; /* Fond noir pour correspondre au design */
+}
+
+/* Boutons de pagination */
+.pagination-button {
+  background-color: #e62429; /* Rouge Marvel */
+  color: white; /* Texte blanc */
+  border: none; /* Supprime les bordures */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 10px 20px; /* Espacement interne pour un bouton confortable */
+  font-size: 16px; /* Taille de la police */
+  font-weight: bold; /* Texte en gras */
+  cursor: pointer; /* Curseur en forme de main */
+  transition: background-color 0.3s ease; /* Transition pour hover */
+}
+
+/* Boutons désactivés */
+.pagination-button:disabled {
+  background-color: #999; /* Fond gris pour les boutons désactivés */
+  cursor: not-allowed; /* Curseur interdit */
+}
+
+/* Effet hover sur les boutons actifs */
+.pagination-button:hover:not(:disabled) {
+  background-color: #c81f25; /* Rouge plus foncé pour hover */
+}
+
+/* Texte de pagination */
+.pagination-text {
+  font-size: 18px; /* Taille du texte */
+  color: white; /* Texte en blanc */
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Page Comics */
+
+/* Grille des comics */
+.comic-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
+  gap: 20px; /* Espacement entre les cartes */
+  margin: 20px auto; /* Marges automatiques */
+  padding: 0 20px; /* Espacement horizontal */
+}
+
+/* Carte des comics */
+.comic-grid > * {
+  font-family: "Marvel", sans-serif;
+  background-color: #333; /* Couleur de fond */
+  color: #fff; /* Texte blanc */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 10px; /* Espacement interne */
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombre */
+}
+
+/* Pagination */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 10px 0;
+  background-color: #0d0d0d; /* Fond noir */
+}
+
+.pagination-button {
+  background-color: #e62429; /* Rouge Marvel */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #c81f25; /* Rouge plus foncé */
+}
+
+.pagination-text {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
